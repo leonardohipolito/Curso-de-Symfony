@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Listagem de Carros</title>
+</head>
+<body>
+{% for mark in data  %}
+    <h3>{{ mark['name'] }}</h3>
+    <p>{{ mark['description'] }}</p>
+    <ul>
+        {% for model in mark['models'] %}
+            <li>{{ model['name'] }}</li>
+        {%  endfor %}
+    </ul>
+{% endfor %}
+</body>
+</html>
