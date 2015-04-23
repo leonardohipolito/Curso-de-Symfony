@@ -1,1 +1,9 @@
-{{ produtos }}
+{% extends "::base.html.twig" %}
+
+{% block body %}
+	produtos
+    {% for produto in produtos %}
+        <h5>{{ produto.name }}</h5>
+        <p>{{ produto.description }}</p>
+    {% endfor %}
+{% endblock body %}
