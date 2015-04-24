@@ -1,0 +1,13 @@
+{% extends '::base.html.twig' %}
+
+{% block body %}
+<div class="page-header">
+  <h1>Novo Produto<small></small></h1>
+</div>
+
+<form class="form" action="{{ path('produto_create') }}" method="post" {{ form_enctype(form) }}>
+    {{ form_errors(form) }}
+    {{ form_widget(form) }}
+    <input type="submit" value="Enviar" />
+</form>
+{% endblock %}

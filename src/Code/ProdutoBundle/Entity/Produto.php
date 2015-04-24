@@ -27,11 +27,11 @@ class Produto
      */
     private $description;
 
-    /**
-     * @ORM\OneToOne(targetEntity="ProdutoDetalhe")
-     * @ORM\JoinColumn(name="detalhe_id",referencedColumnName="id")
-     */
-    private $detalhe;
+//    /**
+//    * @ORM\OneToOne(targetEntity="ProdutoDetalhe")
+//     * @ORM\JoinColumn(name="detalhe_id",referencedColumnName="id")
+//     */
+//    private $detalhe;
 
     /**
      * @ORM\ManyToOne(targetEntity="Code\CategoriaBundle\Entity\Categoria", inversedBy="produtos")
