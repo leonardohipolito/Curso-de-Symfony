@@ -32,7 +32,7 @@ class Categoria {
 	
 
     /**
-     * @OneToMany(targetEntity="Code\ProdutoBundle\Produto", mappedBy="categoria")
+     * @ORM\OneToMany(targetEntity="Code\ProdutoBundle\Entity\Produto", mappedBy="categoria")
      */
     protected $produtos;
 

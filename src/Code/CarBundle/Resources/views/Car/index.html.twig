@@ -5,14 +5,10 @@
     <title>Listagem de Carros</title>
 </head>
 <body>
-{% for mark in data  %}
-    <h3>{{ mark['name'] }}</h3>
-    <p>{{ mark['description'] }}</p>
     <ul>
-        {% for model in mark['models'] %}
-            <li>{{ model['name'] }}</li>
+        {% for car in data %}
+            <li>{{ car.modelo }}</li>
         {%  endfor %}
     </ul>
-{% endfor %}
 </body>
 </html>

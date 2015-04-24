@@ -1,20 +1,21 @@
 <?php
+namespace Code\CarBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 /**
- * @Entity
- * @Table(name="Fabricante")
+ * @ORM\Entity
+ * @ORM\Table(name="Fabricante")
  */
 class Fabricante {
 	/**
-	 * @Id
-	 * @Column(type="integer")
-	 * @GeneratedValue
+	 * @ORM\Id
+	 * @ORM\Column(type="integer")
+	 * @ORM\GeneratedValue
 	 */
 	protected $id = null;
 	
 	/**
-	 * @Column(type="string", name="nome", length=60, unique=true, nullable=false)
+	 * @ORM\Column(type="string", name="nome", length=60, unique=true, nullable=false)
 	 */
 	protected $nome = null;
 	
