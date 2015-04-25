@@ -8,15 +8,11 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
 
 class CarController extends BaseController
 {
-    private $repo=null;
-    private $em=null;
+    private $repo;
+    private $em;
 
-    public function __construct()
-    {
-        
-    }
     /**
-     * @Route("/")
+     * @Route("/",name="car_index")
      * @Template()
      */
     public function indexAction()

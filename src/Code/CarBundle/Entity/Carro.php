@@ -11,27 +11,27 @@ class Carro {
 	 * @ORM\Column(type="integer")
 	 * @ORM\GeneratedValue
 	 */
-	protected $id = null;
+	protected $id;
 	
 	/**
 	 * @ORM\Column(type="string", name="modelo", length=60, unique=true, nullable=false)
 	 */
-	protected $modelo = null;
+	protected $modelo;
 	
 	/**
 	 * @ORM\Column(type="string", name="fabricante")
 	 */
-	protected $fabricante = null;
+	protected $fabricante;
 	
 	/**
 	 * @ORM\Column(type="integer", name="ano", nullable=false)
 	 */
-	protected $ano = null;
+	protected $ano;
 	
 	/**
 	 * @ORM\Column(type="string", name="cor", length=20, nullable=false)
 	 */
-	protected $cor = null;
+	protected $cor;
 	
 
 

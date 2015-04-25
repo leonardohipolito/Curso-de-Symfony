@@ -12,12 +12,12 @@ class Fabricante {
 	 * @ORM\Column(type="integer")
 	 * @ORM\GeneratedValue
 	 */
-	protected $id = null;
+	protected $id;
 	
 	/**
 	 * @ORM\Column(type="string", name="nome", length=60, unique=true, nullable=false)
 	 */
-	protected $nome = null;
+	protected $nome;
 	
 
     /**

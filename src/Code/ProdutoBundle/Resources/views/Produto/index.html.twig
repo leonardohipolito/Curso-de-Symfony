@@ -16,8 +16,13 @@
     	<tbody>
     		{% for produto in produtos %}
     		    <tr>
+	    		    <td>{{ produto.id }}</td>
     		    	<td>{{ produto.name }}</td>
     		    	<td>{{ produto.description }}</td>
+                    <td>
+                        <a href="{{ path('produto_edit',{'id':produto.id}) }}">Editar</a> | 
+                        <a href="{{ path('produto_delete',{'id':produto.id}) }}">Deletar</a>
+                    </td>
     		    </tr>
     		{% endfor %}
     	</tbody>
